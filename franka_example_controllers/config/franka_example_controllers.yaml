@@ -1,5 +1,6 @@
+# franka_example_controllers.yaml : 각 컨트롤러를 파라미터로 정의한 파일
 joint_velocity_example_controller:
-    type: franka_example_controllers/JointVelocityExampleController
+    type: franka_example_controllers/JointVelocityExampleController     # type : cpp 파일에서의 namespace/class로 나타냄
     arm_id: $(arg arm_id)
     joint_names:
         - $(arg arm_id)_joint1
